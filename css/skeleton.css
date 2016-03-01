@@ -171,19 +171,20 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 15px;
   color: #fff;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #00AAED;
+  background-color: #56B68B;
   cursor: pointer;
   margin-right: 20px;
+  border-radius: 6px;
   box-sizing: border-box; }
 .button:hover,
 button:hover,
@@ -195,8 +196,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  background-color: #479F78;
+  color: #fff;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -394,24 +395,26 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header{
   border-top: 5px solid #00AAED;
-  padding: 10px 0 30px 0;
+  padding: 10px 0;
 }
 
 .logo{
   float: left;
+  margin-top: 8px;
 }
 
 .navigation{
   list-style: none;
   padding: 0;
-  padding-top: 40px;
   float: right;
+  margin-top: 30px;
 }
 
 .navigation a{
   text-decoration: none;
   display: block;
   color: #666;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -423,17 +426,50 @@ hr {
     display: inline-block;
     margin-right: 30px;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
-/* Larger than mobile */
+.call-us{
+  color: #fff;
+  background-color: #00AAED;
+  padding: 10px 15px;
+  font-weight: 500 !important;
+}
+
+/* Footer styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer{
+  background: #ECECEC;
+  padding: 30px 0;
+}
+
+footer .navigation{
+  float: left;
+}
+
+.legals{
+  font-weight: 300 !important;
+}
+
+footer img{
+  width: 13%;
+  padding: 10px;
+}
+
+/* Mobile styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 @media (max-width: 600px) {
   .navigation{
-    float: none;
-    text-align: center;
-    color: red;
-    padding-top: 20px;
+    padding: 20px 0;
     margin: 0;
+    text-align: center;
+  }
+
+  .navigation li{
+    margin: 0 !important;
+    padding: 10px;
   }
 
   .logo{
@@ -443,12 +479,33 @@ hr {
   }
 
   .hero-title{
-    font-size: 3em !important;
+    font-size: 1.8em !important;
     color: red;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
   }
 
   .hero{
-    padding: 30px 0 30px 60px !important;
+    padding: 50px 0 !important;
+  }
+
+  .hero-buttons{
+    text-align: center;
+  }
+
+  footer img{
+    float: none !important;
+    width: 30%;
+  }
+
+  footer .logos{
+    text-align: center;
+  }
+
+  footer .navigation{
+    text-align: center;
+    float: none;
   }
 }
 
@@ -457,24 +514,25 @@ hr {
 
 .hero{
   background-image: url(../images/hero.png);
-  padding: 80px;
+  padding: 80px 0;
 }
 
 .hero-title{
   text-transform: uppercase;
   color: #fff;
-  font-size: 3.5em;
-  font-weight: 600;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .introduction{
   background-color: #00AAED;
-  padding: 60px 0;
+  padding: 30px 0;
   margin-bottom: 60px;
 }
 
 .intro{
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 300;
   line-height: 2;
   color: #fff;
   text-align: center;
@@ -487,16 +545,17 @@ hr {
 }
 
 .service{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .service-name{
   background-color: #00AAED;
   color: #fff;
   text-align: center;
-  font-size: 1.5em;
-  font-weight: 500;
-  padding: 15px;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 12px;
   margin: 0;
 }
 
@@ -505,6 +564,17 @@ hr {
 }
 
 .service-note{
-  font-size: 1.3em;
+  font-size: 1.2em;
+  font-weight: 300;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.additional-services{
+  text-transform: uppercase;
+  padding: 20px 30px 0 30px;
+  text-align: center;
+  background-color: #ECECEC;
+  margin-bottom: 60px;
+  border-bottom: 5px solid #00AAED;
 }
