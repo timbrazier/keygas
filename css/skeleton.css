@@ -488,6 +488,8 @@ footer img{
 
   .hero{
     padding: 50px 0 !important;
+    background-image: url(../images/mobile-hero.png);
+    background-size: cover;
   }
 
   .hero-buttons{
@@ -514,6 +516,7 @@ footer img{
 
 .hero{
   background-image: url(../images/hero.png);
+  background-size: cover;
   padding: 80px 0;
 }
 
@@ -578,3 +581,6 @@ footer img{
   margin-bottom: 60px;
   border-bottom: 5px solid #00AAED;
 }
+
+/* Our Work styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
