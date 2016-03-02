@@ -473,7 +473,7 @@ footer img{
 
   .navigation li{
     margin: 0 !important;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px !important;
   }
 
@@ -522,12 +522,12 @@ footer img{
   }
 
   .intro span{
-    color: #fff;
+    color: #fff !important;
     text-decoration: underline;
   }
 
   .call-us span{
-    color: #fff;
+    color: #fff !important;
     text-decoration: underline;
   }
 
