@@ -526,6 +526,11 @@ footer img{
     text-decoration: underline;
   }
 
+  .call-us{
+    width: 70%;
+    padding: 5px !important;
+  }
+
   .call-us span{
     color: #fff !important;
     text-decoration: underline;
