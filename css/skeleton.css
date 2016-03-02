@@ -521,6 +521,16 @@ footer img{
     border-bottom: 5px solid #00AAED;
   }
 
+  .intro span{
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .call-us span{
+    color: #fff;
+    text-decoration: underline;
+  }
+
 }
 
 /* Homepage styles
