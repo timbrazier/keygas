@@ -527,12 +527,12 @@ footer img{
   }
 
   .call-us{
-    width: 70%;
+    width: 80%;
     padding: 5px !important;
   }
 
-  .header .call-us span{
-    color: #fff !important;
+  .tel a{
+    color: #fff;
     text-decoration: underline;
   }
 
