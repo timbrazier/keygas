@@ -27,8 +27,48 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
+  <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
+  <script src="script/isotope.js" type="text/javascript"></script>
+
 </head>
 <body>
+
+<script type="text/javascript">
+$(window).load(function(){
+   var $container = $('.portfolioContainer');
+   $container.isotope({
+       filter: '*',
+       animationOptions: {
+           duration: 750,
+           easing: 'linear',
+           queue: false
+       }
+   });
+
+   $('.portfolioFilter a').click(function(){
+       $('.portfolioFilter .current').removeClass('current');
+       $(this).addClass('current');
+
+       var selector = $(this).attr('data-filter');
+       $container.isotope({
+           filter: selector,
+           animationOptions: {
+               duration: 750,
+               easing: 'linear',
+               queue: false
+           }
+        });
+        return false;
+   });
+});
+
+
+</script>
+
 
   <!-- Header Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -52,82 +92,86 @@
 </div>
 
 <div class="container">
-  <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
-    <div class="grid-item">
+
+<!-- <div class="portfolioFilter">
+
+    <a href="#" data-filter="*" class="current">All Categories</a>
+    <a href="#" data-filter=".people">People</a>
+    <a href="#" data-filter=".places">Places</a>
+    <a href="#" data-filter=".food">Food</a>
+    <a href="#" data-filter=".objects">Objects</a>
+
+</div> -->
+
+<div class="portfolioContainer">
+
+    <div class="objects grid-item">
       <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
         First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-    <div class="grid-item">
+
+    <div class="people places grid-item">
       <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
         First item in the grid goes here I'm not sure how wide this will get
         First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-    <div class="grid-item quote">
-      <p>
-        "Andrew has done a number of jobs, both large and small, for us over several years. These have ranged from radiator replacements, central heating repairs to the installation of two complete bathrooms.       The work has always been done to a very high standard and finished  exactly when  Andrew said it would be.    When we made major changes to our requirements during the works he still managed to keep to the original timescale.   I have no hesitation is recommending Andrew for any jobs, big or small, and know that he will do the work well and that you will enjoy working with him."
-      </p>
-      <p>
-        Kevin, Sheffield
-      </p>
-    </div>
-    <div class="grid-item">
+
+    <div class="food grid-item">
       <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
-        First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-    <div class="grid-item quote">
-      <p>
-        "We have been using the services of Andrew at Keygas for a good number of years now and we are very pleased with his work. We would be happy to recommend him to anyone, safe in the knowledge that he is reliable, honest in his appraisals, good value for money and courteous, qualities  which can be sadly lacking with other tradesmen."
-      </p>
-      <p>
-        Shirley &amp; Mike Clayton, Owlthorpe
-      </p>
-    </div>
-    <div class="grid-item">
+
+    <div class="people places grid-item">
       <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
-        First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-    <div class="grid-item">
+
+    <div class="places objects grid-item">
       <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
-        First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-    <div class="grid-item quote">
-      <p>
-        "I have known Andy for a number of years now as he was the plumber introduced to me by my builders during my house extension. I always find Andy to be a friendly, reliable and trustworthy person, he’s always smiling and turns up when he says he will which is a must in my eyes. Andy has carried out many jobs for us over the years including fully fitting our en-suite shower room and servicing and installing the boiler. We have a second house that Andy also maintains the gas appliances for so that they comply with Gas Safe regulations. This is extremely important to us as it is occupied by a tenant. We would 100% recommend Andy to anyone as all work he has done for us has been of a high standard and at a reasonable price. I even recommended him to my parents and now they won’t call anyone else."
-      </p>
-      <p>
-        Paul and Emma, Chesterfield
-      </p>
-    </div>
-    <div class="grid-item">
+
+    <div class="people food objects grid-item">
       <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
-        First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-    <div class="grid-item quote">
+
+    <div class="food objects grid-item">
+      <img src="../images/boiler-install.png" alt="" width="100%" />
       <p>
-        "We have used the services of Keygas over a number of years. In our previous and present properties. The work has included two new bathrooms and a new boiler and complete heating system. The experience in having a new boiler fitted by Keygas in our current property was far superior than that fitted by British Gas in our former property. The standard of the work, materials, products and professionalism was of a high.  We even gave the keys of the property to them and went on holiday whilst the work was carried out. Friends and family have chosen Keygas to carry out work for them, I have no hesitation in recommending Keygas and will use them again in the future as and when they are needed."
-      </p>
-      <p>
-        Chris, Sheffield
+        First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
       </p>
     </div>
-  </div>
-  </div>
+
+    <div class="food grid-item">
+      <img src="../images/boiler-install.png" alt="" width="100%" />
+      <p>
+        First item in the grid goes here I'm not sure how wide this will get
+        First item in the grid goes here I'm not sure how wide this will get
+      </p>
+    </div>
+
+</div>
+
+</div>
 
 <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<footer>
+<!-- <footer>
   <div class="row container">
     <div class="four columns">
       <ul class="navigation .u-pull-left">
@@ -144,11 +188,7 @@
       <img class="u-pull-right" src="../images/gas-safe.png" alt="" />
     </div>
   </div>
-</footer>
-
-<!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="../scripts/masonry.pkgd.js"></script>
+</footer> -->
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

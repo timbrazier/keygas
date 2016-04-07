@@ -390,6 +390,10 @@ hr {
   display: table;
   clear: both; }
 
+  .clear{
+    clear: both;
+  }
+
 
 /* Header styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -628,6 +632,7 @@ footer img{
 
 .grid {
   background: #fff;
+  max-width: 100%;
 }
 
 /* clearfix */
@@ -641,15 +646,19 @@ footer img{
 
 .grid-item {
   width: 30%;
-  float: left;
   background: #ECECEC;
   border-bottom: 5px solid #00AAED;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .grid-item p{
   padding: 10px 30px 0 20px;
 }
+
+/*.grid-item { width: 30%; }
+.grid-item--width2 { width: 60%; }*/
+
 
 /* ---- Contact us styles ---- */
 
@@ -669,4 +678,33 @@ footer img{
   color: #00AAED;
   font-weight: 500;
   text-decoration: none;
+}
+
+
+
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
 }
