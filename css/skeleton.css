@@ -233,7 +233,8 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
+  height: 40px;
+  width: 50%;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
@@ -253,6 +254,13 @@ textarea {
      -moz-appearance: none;
           appearance: none; }
 textarea {
+  width: 50%;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
@@ -343,7 +351,15 @@ input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  width: 50%;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  padding: 6px 10px;}
 pre,
 blockquote,
 dl,
@@ -678,6 +694,10 @@ footer img{
   color: #00AAED;
   font-weight: 500;
   text-decoration: none;
+}
+
+.contact-form{
+  text-align: center;
 }
 
 
