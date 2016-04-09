@@ -551,6 +551,24 @@ footer img{
     padding: 5px !important;
   }
 
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 40px;
+    width: 80%;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; }
+
 }
 
 /* Homepage styles
@@ -672,37 +690,6 @@ footer img{
   padding: 10px 30px 0 20px;
 }
 
-/*.grid-item { width: 30%; }
-.grid-item--width2 { width: 60%; }*/
-
-
-/* ---- Contact us styles ---- */
-
-.contact-details{
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 2;
-}
-
-.contact-details span{
-  color: #00AAED;
-  font-weight: 500;
-}
-
-.contact-details a{
-  color: #00AAED;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.contact-form{
-  text-align: center;
-}
-
-
-
-
 .isotope-item {
     z-index: 2;
 }
@@ -727,4 +714,30 @@ footer img{
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
+}
+
+
+
+/* ---- Contact us styles ---- */
+
+.contact-details{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.contact-details span{
+  color: #00AAED;
+  font-weight: 500;
+}
+
+.contact-details a{
+  color: #00AAED;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-form{
+  text-align: center;
 }
