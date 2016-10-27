@@ -154,6 +154,12 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
+h4{
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -481,6 +487,11 @@ footer img{
   padding: 10px;
 }
 
+.img-size{
+  width: 160px;
+  height: 80px;
+}
+
 /* Mobile styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -716,6 +727,9 @@ footer img{
     transition-property: transform, opacity;
 }
 
+.cust-advice{
+  margin-bottom: 40px;
+}
 
 
 /* ---- Contact us styles ---- */
