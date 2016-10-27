@@ -466,6 +466,14 @@ hr {
   font-weight: 500 !important;
 }
 
+.call-us a{
+  color: #fff;
+}
+
+.call-us a:hover{
+  color: #fff;
+}
+
 /* Footer styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
