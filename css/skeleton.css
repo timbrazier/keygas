@@ -528,12 +528,11 @@ footer img{
     text-align: center;
     margin: 0 auto;
     padding-bottom: 30px;
+    text-transform: none;
   }
 
   .hero{
     padding: 50px 0 !important;
-    background-image: url(../images/mobile-hero.png);
-    background-size: cover;
   }
 
   .hero-buttons{
